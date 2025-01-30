@@ -1,70 +1,71 @@
-* {
+*{
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
   box-sizing: border-box;
+  font-family: Arial;
   border: none;
 }
 
-body {
+body{
   padding: 90px 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-html,
-body {
+html, body{
   height: 100%;
-  background-color: #121825;
+  background-color: rgb(8, 53, 59);
 }
 
-.container {
+.container{
   display: flex;
   flex-direction: column;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
-.game-container {
+.game-container{
   display: grid;
   grid-template-columns: repeat(3, 80px);
   grid-template-rows: repeat(3, 80px);
   gap: 5px;
-  
 }
 
-@media (min-width: 768px) {
+
+.square{
+  background-color: rgb(20, 157, 150);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+@media (min-width: 768px){
   .game-container {
     width: 490px;
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(3, 150px);
     gap: 15px;
   }
-}
-
-.square {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: antiquewhite;
-  border: 1px solid black;
-  font-size: 24px;
-  cursor: pointer;
-  border-radius: 5px;
+  .square {
+    font-size: 45px;
+  }
 }
 
 p{
-  font-size: 22px;
-  font-weight: bold;
   color: white;
+  font-size: 20px;
 }
 
 button{
-  padding: 12px 18px;
-  background-color: rgb(163, 163, 152);
+  padding: 10px 15px;
+  background-color: rgb(28, 176, 129);
   border-radius: 5px;
+  color: white;
   font-weight: bold;
   cursor: pointer;
 }
